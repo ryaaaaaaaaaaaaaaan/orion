@@ -1,0 +1,68 @@
+ .dirt {
+            color:white;
+            background-color:saddlebrown;
+            width: 1800px;
+            height: 50px;
+            border: 25px solid saddlebrown;
+            padding: 20px;
+            margin: 0px;           
+        }
+
+   body {
+    background-image: url("Images/LAND3.jpg");
+       background-repeat:repeat;
+       background-size:cover;
+       object-fit:cover;
+}
+
+a.button1{
+    display:inline-block;
+    padding: 50px 50px;
+    border:0.1px;
+    margin:0 3px 3px 0;
+    border-radius: 12px;
+    box-sizing:border-box;
+    text-decoration:none;
+    font-family:'roboto',sans-serif;
+    font-weight:300;
+    color:blue;
+    text-align:center;
+    transition: all 0.2s;
+}
+a.button1:hover{
+    color:red;
+    background-color:black;
+}
+
+.topnav a {
+    float: inherit;
+    color:  #FF0000;
+    text-align: center;
+    padding: 14px 10px;
+    text-decoration: underline;
+    font-size: 20px;
+}
+
+.EEE {
+            color:black;
+            background-color:grey;
+            width: 1800px;
+            height: 50px;
+            border: 25px solid grey;
+            padding: 20px;
+            margin: 0px;
+            color:skyblue
+}
+
+
+.G {
+    color:limegreen;
+    background-color:limegreen;
+    width:1950px;
+    height:1px;
+    border:5px
+    solid limegreen;
+    padding;1px;
+    margin: 0px;
+}
+
