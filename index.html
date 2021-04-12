@@ -7,6 +7,11 @@
     
 
         <style>
+            
+            body {
+  background-image: url(Images/dshosrwgrh.png);
+                background-size: cover;
+}
             body {
                 font-family: tahoma;
                 text-align: center;
@@ -47,7 +52,31 @@
             width: 100%;
             margin-bottom: 10px;
             }
+                
+#mySearch {
+  width: 100%;
+  font-size: 18px;
+  padding: 11px;
+  border: 1px solid #ddd;
+}
 
+
+#myMenu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myMenu li a {
+  padding: 12px;
+  text-decoration: none;
+  color: black;
+  display: block
+}
+
+#myMenu li a:hover {
+  background-color: #eee;
+}
             .blue {
             background: teal;
             }
@@ -104,7 +133,20 @@ value="1" min="1" max="5">
         
     </head>
    <body>
-          
+          <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+
+<ul id="myMenu">
+  <li><a href="#">HTML</a></li>
+  <li><a href="#">CSS</a></li>
+  <li><a href="#">JavaScript</a></li>
+  <li><a href="#">PHP</a></li>
+  <li><a href="#">Python</a></li>
+  <li><a href="#">jQuery</a></li>
+  <li><a href="#">SQL</a></li>
+  <li><a href="#">Bootstrap</a></li>
+  <li><a href="#">Node.js</a></li>
+    <li><a href="#">fortnite</a></li>
+</ul>
     
         <header>
         <h1> The Orion Citadel</h1>
@@ -152,8 +194,7 @@ What do you like about the website?
         </table>
     
     
-    <section>
-        
+    
         
         
          <h2> Welcome to a website made by a company called The Orion Citadel</h2>
@@ -161,7 +202,27 @@ What do you like about the website?
         <p>What we do is entertain the reader/viewer. We make a wide variety of things. It can be through gaming, education, memes, and multiple series of epidodes. We try to make multi-dimensional entertainment on websites and videos. </p>
     
     
-        
+       <script>
+function myFunction() {
+  
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("mySearch");
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("myMenu");
+  li = ul.getElementsByTagName("li");
+
+  
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("a")[0];
+    if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+}
+</script>         
+
         
 
         
